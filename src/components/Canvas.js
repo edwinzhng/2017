@@ -1,10 +1,11 @@
 import React from 'react'
+import { withPrefix } from "gatsby-link";
 
 class Canvas extends React.Component {
   componentWillMount() {
     if(typeof window !== 'undefined') {
       const script = document.createElement("script");
-      script.src = "/js/particles.js";
+      script.src = withPrefix('/js/particles.js');
       script.async = true;
       document.body.appendChild(script);
     }
