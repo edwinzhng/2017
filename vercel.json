@@ -12,6 +12,22 @@
   ],
   "rewrites": [
     {
+      "source": "/2017",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/2017/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/2017/projects",
+      "destination": "/projects/index.html"
+    },
+    {
+      "source": "/2017/projects/",
+      "destination": "/projects/index.html"
+    },
+    {
       "source": "/2017/:path*",
       "destination": "/:path*"
     }
