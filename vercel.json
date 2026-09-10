@@ -1,0 +1,19 @@
+{
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/2017/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/2017/:path*",
+      "destination": "/:path*"
+    }
+  ]
+}
