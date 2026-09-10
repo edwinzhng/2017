@@ -5,31 +5,15 @@
   "outputDirectory": ".",
   "redirects": [
     {
-      "source": "/",
-      "destination": "/2017/",
-      "permanent": false
+      "source": "/2017/:path*",
+      "destination": "/:path*",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
-      "source": "/2017",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/2017/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/2017/projects",
+      "source": "/projects",
       "destination": "/projects/index.html"
-    },
-    {
-      "source": "/2017/projects/",
-      "destination": "/projects/index.html"
-    },
-    {
-      "source": "/2017/:path*",
-      "destination": "/:path*"
     }
   ]
 }
